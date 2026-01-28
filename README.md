@@ -12,7 +12,7 @@
 
 기존 Text-to-Image 모델은 영어 프롬프트 중심, GPU 의존적 구조로 폐쇄망 및 내부망 환경에서 활용이 어렵고, 확률 기반 생성으로 인한 스타일 유지 어려움 등의 문제가 존재
 
-==> 본 프로젝트에서는 **번역–생성–후처리**를 하나의 파이프라인으로 통합
+=> 본 프로젝트에서는 **번역–생성–후처리**를 하나의 파이프라인으로 통합
 일부 모듈을 **CPU 기반**으로 설계하여 실무 적용 가능성을 높임
 
 
@@ -31,7 +31,7 @@
 
 
 ## Proposed Pipeline
-'''
+```
 Korean Prompt
 ↓
 Korean → English Translation (BART)
@@ -41,7 +41,8 @@ Text-to-Image Generation (Stable Diffusion)
 Salient Object Detection (U²-Net)
 ↓
 Background Removed Image
-'''
+```
+
 ![Demo Image](demo/image.png)
 
 **입력 예시**
