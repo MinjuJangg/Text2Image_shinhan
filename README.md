@@ -151,7 +151,7 @@ Background Removed Image
 
 
 ## Demo
-![Demo Image](demo/image.png)
+![Demo Image](demo/demo.png)
 
 - demo directory에서 확인 가능
 - 데모 시연은 강의 발표 자료 및 노트북 기반 실행
