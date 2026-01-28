@@ -7,11 +7,12 @@
 
 ## Overview
 
-본 프로젝트는 디자인 전담 조직의 리소스가 제한적인 산업군을 대상으로(금융 등), 현업 실무자가 자연어 질의(한국어)만으로도 즉시 활용 가능한 디자인 이미지를 생성할 수 있도록 하는 **End-to-End 이미지 생성 파이프라인**을 제안
+본 프로젝트는 디자인 전담 조직의 리소스가 제한적인 산업군을 대상으로(금융 등), 현업 실무자가 자연어 질의(한국어)만으로도 즉시 활용 가능한 디자인 이미지를 생성할 수 있도록 하는  
+**End-to-End 이미지 생성 파이프라인**을 제안
 
 기존 Text-to-Image 모델은 영어 프롬프트 중심, GPU 의존적 구조로 폐쇄망 및 내부망 환경에서 활용이 어렵고, 확률 기반 생성으로 인한 스타일 유지 어려움 등의 문제가 존재
 
-=> 본 프로젝트에서는 **번역–생성–후처리**를 하나의 파이프라인으로 통합
+==> 본 프로젝트에서는 **번역–생성–후처리**를 하나의 파이프라인으로 통합
 일부 모듈을 **CPU 기반**으로 설계하여 실무 적용 가능성을 높임
 
 
@@ -30,7 +31,7 @@
 
 
 ## Proposed Pipeline
-```
+'
 Korean Prompt
 ↓
 Korean → English Translation (BART)
@@ -40,8 +41,7 @@ Text-to-Image Generation (Stable Diffusion)
 Salient Object Detection (U²-Net)
 ↓
 Background Removed Image
-```
-
+'''
 ![Demo Image](demo/image.png)
 
 **입력 예시**
@@ -151,6 +151,8 @@ Background Removed Image
 
 
 ## Demo
+![Demo Image](demo/image.png)
 
+- demo directory에서 확인 가능
 - 데모 시연은 강의 발표 자료 및 노트북 기반 실행
 - 한국어 입력 → 이미지 생성 → 배경 제거까지 확인 가능
